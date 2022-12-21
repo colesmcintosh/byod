@@ -43,6 +43,8 @@ if len(df) > 0:
     return df
 
   df = clean_data(df)
+  
+  dataset_title = st.header("Honey Production in the US") if upload_type == 'Demo' else st.empty()
 
   st.subheader(
     f"This dataset has {len(df)} rows and {len(df.columns)} columns.")
